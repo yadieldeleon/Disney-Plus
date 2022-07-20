@@ -40,4 +40,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBHGJyLQblZr8K7HY20ZFaPf7-NQvCEjZw",
+    authDomain: "disney-plus-f4758.firebaseapp.com",
+    projectId: "disney-plus-f4758",
+    storageBucket: "disney-plus-f4758.appspot.com",
+    messagingSenderId: "761112132912",
+    appId: "1:761112132912:web:e38b7ac1be1a6ec325dcf5",
+    measurementId: "G-WEHP08ZV6W"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </html>
